@@ -1,2 +1,3 @@
 # kanbas-react-web-app
 For Northeastern University CS 4550 - Web Development
+Michael Huang
