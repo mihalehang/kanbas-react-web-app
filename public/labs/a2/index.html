@@ -27,5 +27,68 @@
         ID, or class This paragraph's style is set by a 
         rule referring to the P tags
     </p>
+    <h3>Link tag</h3>
+    <p>
+        The best way to apply CSS rules is to declare
+        them in a separate CSS file and load it with 
+        the LINK tag. Always use this method.
+    </p>
+    <h3>ID selectors</h3>
+    <p id="id-selector-1">
+        Instead of changing the look and
+        feel of all the elements of the 
+        same name, e.g., P, we can refer 
+        to a specific element by its ID
+    </p>
+    <p id="id-selector-2">
+        Here's another paragraph using a
+        different ID and a different look 
+        and feel
+    </p>
+    <h3>Class selectors</h3>
+    <p class="wd-class-selector"> <!-- ********************************THIS DOES NOT WORK; STYLE NOT ADDED TO <p>. in HW is it class="class-selector********************************** -->
+        Instead of using IDs to refer
+        to elements, you can use an
+        element's CLASS attribute
+    </p>
+    <h4 class="wd-class-selector">
+        This heading has same style as
+        paragraph above
+    </h4>
+
+    <div class="wd-selector-1">
+        <h3>Document structure selectors</h3>
+        <div class="wd-selector-2">
+            Selectors can be combined to refer elements in
+            particular places in the document
+            <p class="wd-selector-3">
+                This paragraph's red background is referenced as
+                <br/>.selector-2 .selector3<br/>
+                meaning the descendant of some ancestor.
+                <br/>
+                <span class="wd-selector-4">
+                    Whereas this span is a direct child of its parent
+                </span>
+                <br/>
+                You can combine these relationships to create
+                specific styles depending on the document 
+                structure
+            </p>
+        </div>
+    </div>
+    <h2>Colors</h2>
+    <h3 class="wd-fg-color-blue">Foreground color</h3>
+    <p class="wd-fg-color-red">
+        The text in this paragraph is red but
+        <span class="wd-fg-color-green">this text is green</span>
+    </p>
+
+    <h3 class="wd-bg-color-blue wd-fg-color-white">Background color</h3>
+    <p class="wd-bg-color-red wd-fg-color-black">
+        This background of this paragraph is red but
+        <span class="wd-bg-color-green wd-fg-color-white">
+             the background of this text is green and the foreground white
+        </span>
+    </p>
 </body>
 </html>
