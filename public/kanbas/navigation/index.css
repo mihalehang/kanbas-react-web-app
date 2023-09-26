@@ -1,3 +1,17 @@
-.test {
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+    width: 85px;
     background-color: black;
+}
+
+.wd-no-bullet-list {
+    list-style: none;
+    padding: 0px;
+    text-align: center;
+}
+
+a.wd-navigation-links {
+    color: white;
+    text-decoration: none;
 }
