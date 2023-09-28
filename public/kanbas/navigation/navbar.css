@@ -1,13 +1,3 @@
-body {
-    font-family: sans-serif !important;
-    margin: 0px;
-}
-.wd-flex-row-container {
-    display: flex;
-    flex-direction: row;
-    /* width: 85px; */
-}
-
 .navigation-bar {
     width: 85px;
     background-color: black;

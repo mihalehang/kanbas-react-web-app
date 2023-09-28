@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif !important;
+    margin: 0px;
+}
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+    /* width: 85px; */
+}
+
+.courses-tab {
+    margin-left: 30px;
+}
+
+.courses-header {
+    height: 50px;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.courses-header .fas {
+    margin-right: 50px;
+}
+
+.wd-no-bullet-list-courses {
+    list-style: none;
+    padding: 0px;
+    font-size: 1em;
+}
+
+.wd-no-bullet-list-courses li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+}
+
+.wd-no-bullet-list-courses a{
+    text-decoration: none;
+    color: red;
+}
+
+.wd-no-bullet-list-courses a:hover{
+    text-decoration: underline;
+}
+
+#courses-selected {
+    border-left: solid black 2px;
+}
+
+#courses-selected a {
+    color: black !important;
+}
