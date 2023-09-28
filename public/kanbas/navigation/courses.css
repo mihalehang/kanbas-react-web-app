@@ -13,13 +13,24 @@ body {
 }
 
 .courses-header {
-    height: 50px;
-    font-size: 2em;
+    height: 30px;
+    font-size: 1em;
     margin-top: 10px;
+    color: red;
 }
 
-.courses-header .fas {
-    margin-right: 50px;
+.courses-subtitle {
+    font-style:italic;
+    font-size: 0.75em;
+    margin-bottom: 10px;
+}
+
+.courses-header .fa-bars {
+    margin-right: 30px;
+}
+
+.courses-header .fa-chevron-right {
+    color: gray;
 }
 
 .wd-no-bullet-list-courses {
@@ -49,4 +60,8 @@ body {
 
 #courses-selected a {
     color: black !important;
+}
+
+.fa-eye-slash {
+    color: gray !important;
 }
