@@ -2,13 +2,13 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <link href="index.css" rel="stylesheet">
+        <link href="edit.css" rel="stylesheet">
         <link href="../navigation/navbar.css" rel="stylesheet">
         <link href="../navigation/accountbar.css" rel="stylesheet">
         <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
         <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
         <title>
-            Account
+            Profile
         </title>
     </head>
     <body>
@@ -130,6 +130,82 @@
                             </li>
                          </ul>
                     </div>
+                    <div class="profile-content">
+                        <i class="fas fa-regular fa-10x fa-user"></i>
+                        <div class="mb-3">
+                            <label for="profileName" class="form-label">Name:*</label>
+                            <input type="text" class="form-control" id="profileName" placeholder="Michael Huang">
+                        </div>
+                        <div class="profile-pronoun-select">
+                            <label>Pronouns: </label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>None</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="profileTitle" class="form-label">Title:</label>
+                            <input type="text" class="form-control" id="profileTitle" >
+                        </div>
+                        <h4>Contact</h4>
+                        <p>
+                            No registered services, you can add some on the <a href="#">settings</a> page.
+                        </p>
+
+                        
+                        <h4>Biography</h4>
+                        <div class="mb-3">
+                            <label for="profileBiography" class="form-label">Biography</label>
+                            <textarea class="form-control" id="profileBiography" rows="3">
+Fifth Year Undergrad at Northeastern University pursuing a BS in Computer Science. Likes to nap and eat snacks.
+                            </textarea>
+                        </div>
+                        <h4>Links</h4>
+
+                        <div>
+                            <div class="row">
+                                <div class="col-sm link-title">
+                                    Title
+                                </div>
+                                <div class="col-sm link-title">
+                                    URL
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <input type="text" class="form-control" id="linkTitle" placeholder="">
+                                    
+                                </div>
+                                &rarr;
+                                <div class="col-sm">
+                                    <input type="text" class="form-control" id="linkURL" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-light">Add another link</button>
+                        <hr>
+                        <div class="float-end">
+                            <form>
+                                <button class="btn btn-light" formaction="index.html">Cancel</button>
+                                <button class="btn btn-danger" formaction="index.html">Save Profile</button>
+                            </form>
+                        </div>
+                        <!-- <p>
+                            <i class="fas fa-regular fa-link"></i>
+                            <a href="https://www.youtube.com/watch?v=xgY59LQfZSA&feature=youtu.be&ab_channel=WebDevTV">
+                                YouTube
+                                <i class="fas fa-regular fa-external-link-alt"></i>
+                            </a>
+                        </p> -->
+
+                    
+                    </div>
+                    <form>
+                        <a href="index.html" class="btn profile-edit-button">
+                            <i class="fas fa-regular fa-pencil-alt"></i>
+                            Cancel Editing
+                        </a>
+                    </form>
                 </div>
             </div>
         </div>

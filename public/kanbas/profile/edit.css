@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif !important;
+    margin: 0px;
+}
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-content .fa-user{
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.profile-content a {
+    text-decoration: none;
+    color: red;
+}
+
+.fa-pencil-alt {
+    color: black !important;
+}
+
+.fa-link {
+    color: black !important;
+}
+
+.profile-edit-button {
+    color: black;
+    background-color: lightgray !important;
+}
+
+.profile-pronoun-select {
+    margin-bottom: 10px;
+}
+
+.link-title {
+    text-align: center;
+}

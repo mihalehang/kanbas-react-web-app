@@ -1,0 +1,54 @@
+
+.profile-tab {
+    margin-left: 30px;
+}
+
+.profile-header {
+    height: 30px;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.profile-header .fas {
+    margin-right: 30px;
+}
+
+.wd-no-bullet-list-profile {
+    list-style: none;
+    padding: 0px;
+    font-size: 1em;
+    width: 150px;
+}
+
+.wd-no-bullet-list-profile li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+}
+
+.wd-no-bullet-list-profile a{
+    text-decoration: none;
+    color: red;
+}
+
+.wd-no-bullet-list-profile a:hover{
+    text-decoration: underline;
+}
+
+#profile-selected {
+    border-left: solid black 2px;
+}
+
+#profile-selected a {
+    color: black !important;
+}
+
+.profile-tab-content {
+    flex-grow: 1;
+    margin-left: 30px;
+}
+
+.profile-tab-flex-container {
+    display: flex;
+    flex-direction: row;
+}

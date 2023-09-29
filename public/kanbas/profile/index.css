@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif !important;
+    margin: 0px;
+}
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.col-md-test {
+    width: 200px;
+    background-color: black;
+}
+
+.profile-tab-content {
+    flex-grow: 1;
+    margin-left: 30px;
+}
+
+/* .profile-tab-flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-content {
+    margin-left: 30px;
+    width: 300px;
+} */
+
+.profile-content .fa-user{
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.profile-content a {
+    text-decoration: none;
+    color: red;
+}
+
+.fa-pencil-alt {
+    color: black !important;
+}
+
+.fa-link {
+    color: black !important;
+}
+
+.profile-edit-button {
+    color: black;
+    background-color: lightgray !important;
+}
+
