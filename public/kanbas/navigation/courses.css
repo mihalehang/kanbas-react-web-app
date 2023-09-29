@@ -10,6 +10,7 @@ body {
 
 .courses-tab {
     margin-left: 30px;
+    flex-grow: 1;
 }
 
 .courses-header {
@@ -17,6 +18,11 @@ body {
     font-size: 1em;
     margin-top: 10px;
     color: red;
+}
+
+.courses-content {
+    display: flex;
+    flex-direction: row;
 }
 
 .courses-subtitle {
@@ -37,6 +43,7 @@ body {
     list-style: none;
     padding: 0px;
     font-size: 1em;
+    margin-right: 30px;
 }
 
 .wd-no-bullet-list-courses li {
@@ -65,3 +72,98 @@ body {
 .fa-eye-slash {
     color: gray !important;
 }
+
+.course-content-list-buttons {
+    width: 100%;
+    margin-right: 30px;
+}
+
+.course-content-list .fa-grip-vertical {
+    color: black;
+}
+
+.course-content-list .fa-link {
+    color: green;
+}
+
+.course-content-list .fa-check-circle {
+    color: green;
+}
+
+.course-content-list .fa-ellipsis-v {
+    color: black;
+}
+
+.course-content-list-heading .fa-plus {
+    color:black !important;
+}
+
+.course-content-list-indent-link a {
+    color: red;
+    text-decoration: none;
+}
+
+.courses-buttons .btn{
+    margin-left: 5px;
+}
+
+.fa-check-circle {
+    color: green;
+}
+
+.fa-plus {
+    color: white !important;
+}
+
+.courses-buttons .fa-ellipsis-v {
+    color: white !important;
+}
+
+.course-status {
+    display:flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.course-status .fa-ban {
+    color: black;
+}
+
+.course-status .fa-check-circle {
+    color: white;
+}
+
+.publish-button {
+    margin-bottom: 20px;
+}
+
+.course-status-button-list {
+    list-style: none;
+    padding-left: none;
+}
+.course-status-button {
+    margin-bottom: 10px;
+}
+
+.course-status-button .fa-file-import {
+    color: black !important;
+}
+
+.calendar-status {
+    font-size: 0.7em;
+    color: red;
+}
+
+.course-status-reg {
+    color: red;
+}
+
+.course-status-reg .fa-calendar {
+    color: black;
+}
+
+.course-status-small {
+    color: gray;
+    font-size: 0.7em;
+}
+
