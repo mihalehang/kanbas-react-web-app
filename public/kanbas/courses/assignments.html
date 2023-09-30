@@ -20,7 +20,7 @@
                     <img width="90%" src="../../Northeastern-University-Logo.png">
                 </li>
                 <li>
-                    <a href="account.html">
+                    <a href="../navigation/account.html">
                         <p>
                             <i class="fas fa-lg fa-regular fa-user"></i>
                         </p>
@@ -28,7 +28,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="dashboard.html">
+                    <a href="../navigation/dashboard.html">
                         <p>
                             <i class="fas fa-lg fa-solid fa-tachometer-alt"></i>
                         </p>
@@ -36,7 +36,7 @@
                     </a>
                 </li>
                 <li id="navigation-selected">
-                    <a href="courses.html">
+                    <a href="../navigation/courses.html">
                         <p>
                             <i class="fas fa-lg fa-regular fa-book"></i>
                         </p>
@@ -95,14 +95,24 @@
         </div>
         <div class="courses-tab">
             <div class="courses-header">
-                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                <div>
+                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
                     aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <i class="fas fa-lg fa-regular fa-bars"></i>
-                        <li class="breadcrumb-item">CS4550.12631.202410</li>
-                        <li class="breadcrumb-item active" aria-current="page">Home</li>
-                    </ol>
-                </nav>
+                        <ol class="breadcrumb">
+                            <i class="fas fa-lg fa-regular fa-bars"></i>
+                            <li class="breadcrumb-item">CS4550.12631.202410</li>
+                            <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div style="flex-grow: 1">
+                    <div class="float-end px-4">
+                        <div class="btn btn-light">
+                            <i class="fas fa-glasses"></i>
+                            Student View
+                        </div>
+                    </div>
+                </div>
             </div>
             <hr>
             <div class="courses-content">
@@ -112,8 +122,8 @@
                     </div>
                     <div class="course-bar">
                         <ul class="wd-no-bullet-list-courses ">
-                            <li id="courses-selected">
-                                <a href="../home.html">Home</a>
+                            <li>
+                                <a href="../navigation/courses.html">Home</a>
                             </li>
                             <li>
                                 <a href="#">Modules</a>
@@ -124,14 +134,14 @@
                             <li>
                                 <a href="#">Zoom Meetings</a>
                             </li>
-                            <li>
-                                <a href="/kanbas/courses/assignments.html">Assignments</a>
+                            <li id="courses-selected">
+                                <a href="assignments.html">Assignments</a>
                             </li>
                             <li>
                                 <a href="#">Quizzes</a>
                             </li>
                             <li>
-                                <a href="../grades.html">Grades</a>
+                                <a href="grades.html">Grades</a>
                             </li>
                             <li>
                                 <a href="#">People</a>
@@ -213,40 +223,34 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                 </div>
 
                 <div class="course-content-list-buttons">
-                    <div class="btn-toolbar float-end courses-buttons">
-                        <button type="button" class="btn btn-secondary">Collapse All</button>
-                        <button type="button" class="btn btn-secondary">View Progress</button>
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                <i class="far fa-check-circle"></i>
-                                Publish All
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                    <div class="mb-1">
+                        <div class="float-start">
+                            <input type="text" class="form-control" placeholder="Search For Assignment">
                         </div>
-                        <button type="button" class="btn btn-danger">
-                            <i class="fas fa-plus"></i>
-                            Module
-                        </button>
-                        <button type="button" class="btn btn-secondary">
-                            <i class="fas fa-ellipsis-v"></i>
-                        </button>
+                        <div class="btn-toolbar float-end courses-buttons">
+                            <button type="button" class="btn btn-secondary">
+                                <i class="fas fa-plus"></i>
+                                Group
+                            </button>
+                            <button type="button" class="btn btn-danger">
+                                <i class="fas fa-plus"></i>
+                                Assignment
+                            </button>
+                            <button type="button" class="btn btn-secondary">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
                     </div>
-                    </br>
                     </br>
                     <hr>
                     <ul class="list-group course-content-list">
                         <li class="list-group-item list-group-item-secondary course-content-list-heading">
                             <i class="fas fa-grip-vertical"></i>
-                            Week 0 - INTRO
+                            Assignments
                             <div class="float-end">
                                 <i class="fas fa-check-circle"></i>
                                 <i class="fas fa-plus"></i>
@@ -254,223 +258,186 @@
                             </div>
                         </li>
                         <li class="list-group-item">
-                            <i class="fas fa-grip-vertical"></i>
-                            Learning Objectives
-                            <div class="float-end">
-                                <i class="fas fa-check-circle"></i>
-                                <i class="fas fa-ellipsis-v"></i>
+                            <div class="assignment-content">
+                                <div class="assignment-content-list-icon-container">
+                                    <div>
+                                        <i class="fas fa-grip-vertical"></i>
+                                        <i class="far fa-edit"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div style="font-weight: bold;">
+                                        <a href="edit.html">A1 SETUP</a>
+                                    </div>
+                                    <div class="assignment-content-small">
+                                        Week 0 - SETUP - Week starting on Monday September 5th (9/5/2023) Module |
+                                    </div>
+                                    <div class="assignment-content-small">
+                                        Due Sep 18, 2022 at 11:59pm | 100pts
+                                    </div>
+                                </div>
+                                <div class="assignment-content-end-icons">
+                                    <div class="float-end">
+                                        <div>
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </li>
+
                         <li class="list-group-item">
-                            <i class="fas fa-grip-vertical"></i>
-                            <span class="ms-5">Introduction to the Course</span>
-                            <div class="float-end">
-                                <i class="fas fa-check-circle"></i>
-                                <i class="fas fa-ellipsis-v"></i>
+                            <div class="assignment-content">
+                                <div class="assignment-content-list-icon-container">
+                                    <div>
+                                        <i class="fas fa-grip-vertical"></i>
+                                        <i class="far fa-edit"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div style="font-weight: bold;">
+                                        <a href="edit.html">A2 HTML</a>
+                                    </div>
+                                    <div class="assignment-content-small">
+                                        Week 1 - HTML - Week starting on Monday September 12th (9/12/2023) Module |
+                                    </div>
+                                    <div class="assignment-content-small">
+                                        Due Sep 25, 2022 at 11:59pm | 100pts
+                                    </div>
+                                </div>
+                                <div class="assignment-content-end-icons">
+                                    <div class="float-end">
+                                        <div>
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </li>
+
                         <li class="list-group-item">
-                            <i class="fas fa-grip-vertical"></i>
-                            <span class="ms-5">Learning what is Web Development</span>
-                            <div class="float-end">
-                                <i class="fas fa-check-circle"></i>
-                                <i class="fas fa-ellipsis-v"></i>
+                            <div class="assignment-content">
+                                <div class="assignment-content-list-icon-container">
+                                    <div>
+                                        <i class="fas fa-grip-vertical"></i>
+                                        <i class="far fa-edit"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div style="font-weight: bold;">
+                                        <a href="edit.html">A3 CSS</a>
+                                    </div>
+                                    <div class="assignment-content-small">
+                                        Week 2 - CSS - Week starting on Monday September 19th (9/19/2023) Module |
+                                    </div>
+                                    <div class="assignment-content-small">
+                                        Due Oct 2, 2022 at 11:59pm | 100pts
+                                    </div>
+                                </div>
+                                <div class="assignment-content-end-icons">
+                                    <div class="float-end">
+                                        <div>
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </li>
+
                         <li class="list-group-item">
-                            <i class="fas fa-grip-vertical"></i>
-                            <span class="ms-5">Creating a Development Environment</span>
-                            <div class="float-end">
-                                <i class="fas fa-check-circle"></i>
-                                <i class="fas fa-ellipsis-v"></i>
+                            <div class="assignment-content">
+                                <div class="assignment-content-list-icon-container">
+                                    <div>
+                                        <i class="fas fa-grip-vertical"></i>
+                                        <i class="far fa-edit"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div style="font-weight: bold;">
+                                        <a href="edit.html">A4 BOOTSTRAP</a>
+                                    </div>
+                                    <div class="assignment-content-small">
+                                        Week 3 - BOOTSTRAP - Week starting on Monday September 26th (9/26/2023) Module |
+                                    </div>
+                                    <div class="assignment-content-small">
+                                        Due Oct 10, 2022 at 11:59pm | 100pts
+                                    </div>
+                                </div>
+                                <div class="assignment-content-end-icons">
+                                    <div class="float-end">
+                                        <div>
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </li>
+
                         <li class="list-group-item">
-                            <i class="fas fa-grip-vertical"></i>
-                            <span class="ms-5">Creating a Web Application</span>
-                            <div class="float-end">
-                                <i class="fas fa-check-circle"></i>
-                                <i class="fas fa-ellipsis-v"></i>
+                            <div class="assignment-content">
+                                <div class="assignment-content-list-icon-container">
+                                    <div>
+                                        <i class="fas fa-grip-vertical"></i>
+                                        <i class="far fa-edit"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div style="font-weight: bold;">
+                                        <a href="edit.html">A5 JAVASCRIPT</a>
+                                    </div>
+                                    <div class="assignment-content-small">
+                                        Week 5 - JavaScript - Week starting on Monday October 3rd (10/3/2023) Module |
+                                    </div>
+                                    <div class="assignment-content-small">
+                                        Due Oct 16, 2022 at 11:59pm | 100pts
+                                    </div>
+                                </div>
+                                <div class="assignment-content-end-icons">
+                                    <div class="float-end">
+                                        <div>
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </li>
+
                         <li class="list-group-item">
-                            <i class="fas fa-grip-vertical"></i>
-                            <span class="ms-5">Getting Started with the 1st assignment</span>
-                            <div class="float-end">
-                                <i class="fas fa-check-circle"></i>
-                                <i class="fas fa-ellipsis-v"></i>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fas fa-grip-vertical"></i>
-                            READING
-                            <div class="float-end">
-                                <i class="fas fa-check-circle"></i>
-                                <i class="fas fa-ellipsis-v"></i>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fas fa-grip-vertical"></i>
-                            <span class="ms-5">Full Stack Developer - Chapter 1 - Introduction</span>
-                            <div class="float-end">
-                                <i class="fas fa-check-circle"></i>
-                                <i class="fas fa-ellipsis-v"></i>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fas fa-grip-vertical"></i>
-                            <span class="ms-5">Full Stack Developer - Chapter 2 - Creating User Interfaces With
-                                HTML</span>
-                            <div class="float-end">
-                                <i class="fas fa-check-circle"></i>
-                                <i class="fas fa-ellipsis-v"></i>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fas fa-grip-vertical"></i>
-                            SLIDES
-                            <div class="float-end">
-                                <i class="fas fa-check-circle"></i>
-                                <i class="fas fa-ellipsis-v"></i>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fas fa-grip-vertical"></i>
-                            <i class="fas fa-link"></i>
-                            <span class="ms-3">
-                                <a href="#">Introduction to Web Development Links to an external site
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </span>
-                            <div class="float-end">
-                                <i class="fas fa-check-circle"></i>
-                                <i class="fas fa-ellipsis-v"></i>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fas fa-grip-vertical"></i>
-                            <i class="fas fa-link"></i>
-                            <span class="ms-3">
-                                <a href="#">Creating an HTTP Server with Node.js Links to an external site
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </span>
-                            <div class="float-end">
-                                <i class="fas fa-check-circle"></i>
-                                <i class="fas fa-ellipsis-v"></i>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fas fa-grip-vertical"></i>
-                            <i class="fas fa-link"></i>
-                            <span class="ms-3">
-                                <a href="#">Creating a React Application Links to an external site
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </span>
-                            <div class="float-end">
-                                <i class="fas fa-check-circle"></i>
-                                <i class="fas fa-ellipsis-v"></i>
+                            <div class="assignment-content">
+                                <div class="assignment-content-list-icon-container">
+                                    <div>
+                                        <i class="fas fa-grip-vertical"></i>
+                                        <i class="far fa-edit"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div style="font-weight: bold;">
+                                        <a href="edit.html">A6 REACT</a>
+                                    </div>
+                                    <div class="assignment-content-small">
+                                        Week 5 - React & Routing - Week starting on Monday October 10th (10/10/2023)
+                                        Module |
+                                    </div>
+                                    <div class="assignment-content-small">
+                                        Due Oct 23, 2022 at 11:59pm | 100pts
+                                    </div>
+                                </div>
+                                <div class="assignment-content-end-icons">
+                                    <div class="float-end">
+                                        <div>
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </li>
                     </ul>
-                    <div style="margin-top: 10px;">
-                        <ul class="list-group course-content-list">
-                            <li class="list-group-item list-group-item-secondary course-content-list-heading">
-                                <i class="fas fa-grip-vertical"></i>
-                                Week 1 - INTRO
-                                <div class="float-end">
-                                    <i class="fas fa-check-circle"></i>
-                                    <i class="fas fa-plus"></i>
-                                    <i class="fas fa-ellipsis-v"></i>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <i class="fas fa-grip-vertical"></i>
-                                Learning Objectives
-                                <div class="float-end">
-                                    <i class="fas fa-check-circle"></i>
-                                    <i class="fas fa-ellipsis-v"></i>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <i class="fas fa-grip-vertical"></i>
-                                <span class="ms-5">Learn how to create user interfaces with HTML</span>
-                                <div class="float-end">
-                                    <i class="fas fa-check-circle"></i>
-                                    <i class="fas fa-ellipsis-v"></i>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="course-status d-none d-xl-block">
-                    Course Status
-                    </br>
-                    <div class="btn-group publish-button">
-                        <button type="button" class="btn btn-light">
-                            <i class="fas fa-ban"></i>
-                            Unpublish
-                        </button>
-                        <button type="button" class="btn btn-success" disabled>
-                            <i class="fas fa-check-circle"></i>
-                            Publish
-                        </button>
-                    </div>
-                    <div class="course-status-button">
-                        <button type="button" class="btn btn-secondary ">
-                            <i class="fas fa-file-import"></i>
-                            Import Existing Content
-                        </button>
-                    </div>
-                    <div class="course-status-button">
-                        <button type="button" class="btn btn-secondary ">
-                            <i class="fas fa-file-import"></i>
-                            Import From Commons
-                        </button>
-                    </div>
-
-                    To-Do
-                    <div>
-                        <div class="course-status-reg">
-                            <i class="fas fa-xs fa-circle"></i>
-                            Grade A1 - ENV + HTML
-                        </div>
-                        <div class="ms-4 course-status-small">
-                            100 Points
-                        </div>
-                    </div>
-
-                    <hr>
-
-                    <div>
-                        Coming Up
-                        <div class="float-end calendar-status">
-                            <i class="far fa-calendar"></i>
-                            View Calendar
-                        </div>
-                        <div>
-                            <div class="course-status-reg">
-                                <i class="fas fa-xs fa-calendar"></i>
-                                Lecture
-                            </div>
-                            <div class="ms-4 course-status-small">
-                                CS4550.12631.202410
-                            </div>
-                        </div>
-                        <div>
-                            <div class="course-status-reg">
-                                <i class="fas fa-xs fa-calendar"></i>
-                                CS5610 Lecture
-                            </div>
-                            <div class="ms-4 course-status-small">
-                                CS4550.12631.202410
-                            </div>
-                        </div>
-                        <span style="color:red; font-size: 0.5em">
-                            12 more in the ...
-                        </span>
-                    </div>
                 </div>
             </div>
         </div>

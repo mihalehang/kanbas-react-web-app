@@ -134,79 +134,26 @@ body {
     color: white !important;
 }
 
-.course-status {
-    display:flex;
-    flex-direction: column;
-    margin-right: 30px;
+.courses-buttons .fa-check-circle {
+    color: green;
 }
 
-.course-status .fa-ban {
-    color: black;
-}
-
-.course-status .fa-check-circle {
-    color: white;
-}
-
-.publish-button {
-    margin-bottom: 20px;
-}
-
-.course-status-button-list {
-    list-style: none;
-    padding-left: none;
-}
-.course-status-button {
-    margin-bottom: 10px;
-}
-
-.course-status-button .fa-file-import {
-    color: black !important;
-}
-
-.calendar-status {
-    font-size: 0.7em;
-    color: red;
-}
-
-.course-status-reg {
-    color: red;
-}
-
-.course-status-reg .fa-calendar {
-    color: black;
-}
-
-.course-status-small {
-    color: gray;
-    font-size: 0.7em;
-}
-
-.assignment-input {
+.grade-filter {
     width: 100px;
 }
 
-.assignment-content {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+.grades-buttons .fas{
+    color: black;
 }
 
-.assignment-content-list-icon-container {
-    display: flex;
-    align-items: center; 
+.student-name {
+    color: red !important;
 }
 
-.assignment-content-end-icons {
-    flex-grow: 1;
+.grade-input {
+    width: 200px;
 }
 
-.assignment-content-small {
-    font-size: 0.75em;
-    color: gray;
-}
-
-.assignment-content a {
-    text-decoration: none;
+.grade-input .fa-external-link-alt {
     color: black;
 }

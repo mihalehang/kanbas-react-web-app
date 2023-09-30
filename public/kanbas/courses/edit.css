@@ -134,79 +134,19 @@ body {
     color: white !important;
 }
 
-.course-status {
-    display:flex;
-    flex-direction: column;
-    margin-right: 30px;
+.courses-buttons .fa-check-circle {
+    color: green;
 }
 
-.course-status .fa-ban {
-    color: black;
+.published {
+    color:green;
+    font-weight: bold;
 }
 
-.course-status .fa-check-circle {
-    color: white;
+.asnt-date-footer {
+    text-align: center;
 }
 
-.publish-button {
-    margin-bottom: 20px;
-}
-
-.course-status-button-list {
-    list-style: none;
-    padding-left: none;
-}
-.course-status-button {
-    margin-bottom: 10px;
-}
-
-.course-status-button .fa-file-import {
+.asnt-date-footer .fa-plus {
     color: black !important;
-}
-
-.calendar-status {
-    font-size: 0.7em;
-    color: red;
-}
-
-.course-status-reg {
-    color: red;
-}
-
-.course-status-reg .fa-calendar {
-    color: black;
-}
-
-.course-status-small {
-    color: gray;
-    font-size: 0.7em;
-}
-
-.assignment-input {
-    width: 100px;
-}
-
-.assignment-content {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
-.assignment-content-list-icon-container {
-    display: flex;
-    align-items: center; 
-}
-
-.assignment-content-end-icons {
-    flex-grow: 1;
-}
-
-.assignment-content-small {
-    font-size: 0.75em;
-    color: gray;
-}
-
-.assignment-content a {
-    text-decoration: none;
-    color: black;
 }
