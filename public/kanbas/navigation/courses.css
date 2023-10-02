@@ -171,3 +171,17 @@ body {
     font-size: 0.7em;
 }
 
+.courses-header-hidden {
+    height: 100px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.courses-header-hidden .fas {
+    color: white;
+}
+
+.hidden-header {
+    color: white;
+}

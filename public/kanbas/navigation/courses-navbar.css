@@ -1,0 +1,16 @@
+.navbar-only {
+    color: red;
+}
+
+.navbar-only .fa-chevron-right{
+    color: gray;
+}
+
+.navbar-only .fa-times {
+    color: gray;
+}
+
+.navbar-only a {
+    text-decoration: none;
+    color: red;
+}

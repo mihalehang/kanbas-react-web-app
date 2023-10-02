@@ -1,0 +1,27 @@
+.courses-header-hidden {
+    height: 100px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.courses-header-hidden .fas {
+    color: white;
+}
+
+.hidden-header {
+    color: white;
+}
+
+.course-bar ul {
+    list-style: none;
+}
+
+.course-bar a{
+    text-decoration: none;
+    color: red;
+}
+
+.course-bar .fa-eye-slash {
+    color: gray;
+}
