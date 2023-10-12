@@ -1,0 +1,28 @@
+#NeuLogo {
+    width: 80px;
+}
+
+#navbar .Account p{
+    color: gray !important;
+}
+
+#navbar .list-group-item {
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: none;
+}
+
+#navbar .list-group-item p {
+    color: red;
+    margin-bottom: 0px;
+}
+
+#navbar .active {
+    background-color: white;
+    color: red;
+}
+
+#navbar .list-group {
+    width: 80px;
+}
