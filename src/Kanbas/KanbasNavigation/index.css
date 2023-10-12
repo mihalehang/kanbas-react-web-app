@@ -26,3 +26,8 @@
 #navbar .list-group {
     width: 80px;
 }
+
+#navbar-content {
+    height: 100vh;
+    background-color: black;
+}

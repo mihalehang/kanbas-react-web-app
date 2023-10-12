@@ -26,7 +26,7 @@ function KanbasNavigation() {
     ];
     const { pathname } = useLocation();
     return (
-        <div>
+        <div id="navbar-content">
             <div id="navbar" className="list-group rounded-0">
                 <div className="list-group-item">
                     <img id="NeuLogo" src={NeuLogo} alt="Logo" />
@@ -43,6 +43,9 @@ function KanbasNavigation() {
                         {item.link}
                     </Link>
                 ))}
+                {/* <div className="list-group-item last-item">
+                    asd
+                </div> */}
             </div>
         </div>
     );
