@@ -60,7 +60,7 @@ function ModuleList() {
                                 <div>
                                     <BsGripVertical size={24} />
                                     <AiFillCaretRight size={24} />
-                                    <span>{module.name}</span>
+                                    <span>{module.name} - {module.description}</span>
                                 </div>
                                 <div style={{ flexGrow: 1 }}>
                                     <div className="float-end">

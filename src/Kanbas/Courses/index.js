@@ -7,6 +7,7 @@ import Modules from "./Modules";
 import { BsEyeglasses } from "react-icons/bs";
 import Home from "./Home";
 import Assignments from "./Assignments";
+import AssignmentEditor from "./Assignments/AssignmentEditor";
 
 function Courses() {
     const { courseId } = useParams();
@@ -90,7 +91,7 @@ function Courses() {
                                 />
                                 <Route
                                     path="Assignments/:assignmentId"
-                                    element={<h1>Assignment Editor</h1>}
+                                    element={<AssignmentEditor/>}
                                 />
                                 <Route
                                     path="Grades"

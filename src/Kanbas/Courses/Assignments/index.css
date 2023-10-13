@@ -1,0 +1,70 @@
+.assignment-buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.assignment-buttons-end .btn{
+    margin-left: 10px;
+}
+
+
+.assignment-list-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.title-begin {
+    display: flex;
+    align-items: center;
+}
+
+.title-end {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.assignment-list-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.assignment-list-content-begin {
+    display: flex;
+    align-items: center;
+}
+
+.assignment-list-content-end {
+    flex-grow: 1;
+}
+
+.end-icons {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.end-icons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.check {
+    color: green;
+    margin-right: 10px;
+}
+
+.grip {
+    margin-right: 10px;
+}
+
+.plus {
+    margin-right: 10px;
+}
+
+.edit {
+    color: green;
+    margin-right: 10px;
+}
+
