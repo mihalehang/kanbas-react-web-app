@@ -43,9 +43,6 @@ function KanbasNavigation() {
                         {item.link}
                     </Link>
                 ))}
-                {/* <div className="list-group-item last-item">
-                    asd
-                </div> */}
             </div>
         </div>
     );

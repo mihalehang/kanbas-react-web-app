@@ -1,0 +1,34 @@
+.home-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.status-bar-content {
+    width: 350px;
+    margin-left: 20px;
+}
+
+.course-status-button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.course-status-button .btn{
+    width: 100%;
+    text-align: left;
+}
+
+.todo-content {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.75em;
+}
+
+.todo-number-icon {
+    color: red;
+    margin-right: 10px;
+}
+
+.todo-title{
+    color: red;
+}

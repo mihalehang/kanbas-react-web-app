@@ -1,0 +1,36 @@
+/* .course-title {
+    margin-left: 30px;
+} */
+.course-content {
+    margin-left: 30px;
+}
+
+.course-title {
+    margin-top: 20px;
+    font-size: 1.25em;
+    display: flex;
+    flex-direction: row;
+}
+
+.course-nav-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.course-body {
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+nav {
+    --bs-breadcrumb-divider: '>';
+}
+
+#breadcrumb-icon {
+    color: red;
+    margin-right: 30px;
+}
+
+.breadcrumb-course-number {
+    color: red;
+}

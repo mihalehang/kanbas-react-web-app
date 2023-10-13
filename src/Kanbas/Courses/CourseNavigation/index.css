@@ -1,0 +1,15 @@
+#coursebar .list-group-item {
+    background-color: white;
+    color: red;
+    border: none;
+}
+
+#coursebar .active {
+    border-left: solid black 2px;
+}
+
+.course-bar-title {
+    color: gray !important;
+    font-style:italic;
+    font-size: 0.75em;
+}
