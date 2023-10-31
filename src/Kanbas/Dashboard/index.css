@@ -17,3 +17,7 @@
 .dashboard-courses {
     margin-left: 20px;
 }
+
+.course-input {
+    width: 200px; 
+}
