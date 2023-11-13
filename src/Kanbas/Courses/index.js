@@ -8,10 +8,20 @@ import { BsEyeglasses } from "react-icons/bs";
 import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
-function Courses({courses}) {
+function Courses() {
     const { courseId } = useParams();
-    const course = courses.find((course) => course._id === courseId);
+    const [course, setCourse] = useState({});
+    const findCourseById = async (courseId) => {
+        const response = await axios.get(`${URL}/${courseId}`);
+        setCourse(response.data);
+    };
+    useEffect(() => {
+        findCourseById(courseId);
+    }, [courseId]);
+
     return (
         <div>
             <div className="course-content">
@@ -27,32 +37,18 @@ function Courses({courses}) {
                                 </li>
                                 <li className="breadcrumb-item">
                                     <Routes>
-                                        <Route
-                                            path="/"
-                                            element={<span>Home</span>}
-                                        />
-                                        <Route
-                                            path="Home"
-                                            element={<span>Home</span>}
-                                        />
-                                        <Route
-                                            path="Modules"
-                                            element={<span>Modules</span>}
-                                        />{" "}
+                                        <Route path="/" element={<span>Home</span>} />
+                                        <Route path="Home" element={<span>Home</span>} />
+                                        <Route path="Modules" element={<span>Modules</span>} />{" "}
                                         <Route
                                             path="Assignments"
                                             element={<span>Assignments</span>}
                                         />
                                         <Route
                                             path="Assignments/:assignmentId"
-                                            element={
-                                                <span>Assignment Editor</span>
-                                            }
+                                            element={<span>Assignment Editor</span>}
                                         />
-                                        <Route
-                                            path="Grades"
-                                            element={<span>Grades</span>}
-                                        />
+                                        <Route path="Grades" element={<span>Grades</span>} />
                                     </Routes>
                                 </li>
                             </ol>
@@ -61,10 +57,7 @@ function Courses({courses}) {
                     <div style={{ flexGrow: 1 }} className="studentview-button">
                         <div className="float-end">
                             <div className="btn btn-light border">
-                                <BsEyeglasses
-                                    size={24}
-                                    className="studentview-button-icon"
-                                />
+                                <BsEyeglasses size={24} className="studentview-button-icon" />
                                 Student View
                             </div>
                         </div>
@@ -76,27 +69,15 @@ function Courses({courses}) {
                     <div className="course-body">
                         <div className="overflow-y-auto">
                             <Routes>
-                                <Route
-                                    path="/"
-                                    element={<Navigate to="Home" />}
-                                />
+                                <Route path="/" element={<Navigate to="Home" />} />
                                 <Route path="Home" element={<Home />} />
-                                <Route
-                                    path="Modules"
-                                    element={<Modules />}
-                                />{" "}
-                                <Route
-                                    path="Assignments"
-                                    element={<Assignments />}
-                                />
+                                <Route path="Modules" element={<Modules />} />{" "}
+                                <Route path="Assignments" element={<Assignments />} />
                                 <Route
                                     path="Assignments/:assignmentId"
-                                    element={<AssignmentEditor/>}
+                                    element={<AssignmentEditor />}
                                 />
-                                <Route
-                                    path="Grades"
-                                    element={<h1>Grades</h1>}
-                                />
+                                <Route path="Grades" element={<h1>Grades</h1>} />
                             </Routes>
                         </div>
                     </div>
