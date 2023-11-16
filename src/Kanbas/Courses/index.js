@@ -14,6 +14,7 @@ import { useEffect, useState } from "react";
 function Courses() {
     const { courseId } = useParams();
     const [course, setCourse] = useState({});
+    const URL = "http://localhost:4000/api/courses";
     const findCourseById = async (courseId) => {
         const response = await axios.get(`${URL}/${courseId}`);
         setCourse(response.data);

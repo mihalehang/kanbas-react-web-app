@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database";
 import "./ModuleList.css";
@@ -10,14 +10,39 @@ import {
     AiOutlinePlus,
 } from "react-icons/ai";
 import { useDispatch, useSelector } from "react-redux";
-import { addModule, deleteModule, setModule, updateModule } from "./modulesReducer";
+import { addModule, deleteModule, setModule, setModules, updateModule } from "./modulesReducer";
+import { createModule, findModulesForCourse } from "./client";
+import * as client from "./client";
 
 function ModuleList() {
     const { courseId } = useParams();
+    useEffect(() => {
+        findModulesForCourse(courseId)
+          .then((modules) =>
+            dispatch(setModules(modules))
+        );
+      }, [courseId]);    
     const modules = useSelector((state) => state.modulesReducer.modules);
     const module = useSelector((state) => state.modulesReducer.module);
     const dispatch = useDispatch();
 
+    const handleAddModule = () => {
+        createModule(courseId, module).then((module) => {
+          dispatch(addModule(module));
+        });
+    };
+    const handleDeleteModule = (moduleId) => {
+        client.deleteModule(moduleId).then((status) => {
+          dispatch(deleteModule(moduleId));
+        });
+    };
+    
+    const handleUpdateModule = async () => {
+        const status = await client.updateModule(module);
+        dispatch(updateModule(module));
+    };
+    
+    
     return (
         <div className="module-list-container">
             <div className="course-buttons float-end">
@@ -82,15 +107,17 @@ function ModuleList() {
                             <div className="mt-2">
                                 <button
                                     className="btn btn-light border-dark mx-1 btn-sm"
-                                    onClick={() =>
-                                        dispatch(addModule({ ...module, course: courseId }))
-                                    }
+                                    // onClick={() =>
+                                    //     dispatch(addModule({ ...module, course: courseId }))
+                                    // }
+                                    onClick={handleAddModule}
                                 >
                                     Add
                                 </button>
                                 <button
                                     className="btn btn-light border-dark mx-1 btn-sm"
-                                    onClick={() => dispatch(updateModule(module))}
+                                    // onClick={() => dispatch(updateModule(module))}
+                                    onClick={() => handleUpdateModule()}
                                 >
                                     Update
                                 </button>
@@ -118,12 +145,16 @@ function ModuleList() {
                                     <div className="float-end">
                                         <button 
                                             className="btn btn-light border-dark btn-sm"
-                                            onClick={() => dispatch(setModule(module))}>
+                                            // onClick={() => dispatch(setModule(module))}>
+                                            onClick={() => {handleUpdateModule();
+                                                        dispatch(setModule(module));}}>
                                             Edit
                                         </button>
                                         <button 
                                             className="btn btn-light border-dark btn-sm mx-2"
-                                            onClick={() => dispatch(deleteModule(module._id))}>
+                                            //onClick={() => dispatch(deleteModule(module._id))}>
+                                             onClick={() => handleDeleteModule(module._id)}>
+                                             
                                             Delete
                                         </button>
 
