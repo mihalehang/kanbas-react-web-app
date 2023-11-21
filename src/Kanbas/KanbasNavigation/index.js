@@ -15,6 +15,8 @@ import "./index.css";
 function KanbasNavigation() {
     const navBarItems = [
         { link: "Account", icon: <BsPersonCircle size={32} /> },
+        { link: "Signin", icon: <BsPersonCircle size={32} /> },
+        { link: "Signup", icon: <BsPersonCircle size={32} /> },
         { link: "Dashboard", icon: <BsSpeedometer size={32} /> },
         { link: "Courses", icon: <BsBook size={32} /> },
         { link: "Calendar", icon: <BsFillCalendarFill size={32} /> },
